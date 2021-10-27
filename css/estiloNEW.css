@@ -1,0 +1,997 @@
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap');
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     font-family: 'Noto Sans JP', sans-serif;
+ }
+ /* ======================
+cambios menu
+=========================*/
+ 
+ #menu a {
+     font-size: 18px;
+     font-weight: bold;
+ }
+ 
+ .fondo {
+     background: url(https://raw.githubusercontent.com/Ruzder/grupal/main/banner1.jpg);
+     width: auto;
+     height: 700px;
+     text-align: center;
+ }
+ 
+ .fondo h1 {
+     font-size: 50px;
+ }
+ 
+ .fondo h3 {
+     font-size: 20px;
+ }
+ /* ======================
+footer
+=========================*/
+ 
+ .footer {
+     background: #1b2a2e;
+     min-height: 100px;
+ }
+ 
+ .footer p {
+     color: #f3f3f3;
+     text-align: center;
+ }
+ 
+ #iconos i {
+     font-size: 26px;
+     padding: 0 8px;
+     color: #f3f3f3;
+ }
+ 
+ .contenedor-hijo-cont {
+     width: 550px;
+ }
+ 
+ .contenedor-hijo-cont1 {
+     width: 800px;
+ }
+ /* =================================
+ formulario mas imagen en contacto
+====================================*/
+ 
+ .container {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 10px 10px;
+ }
+ 
+ .contact-box {
+     max-width: 100%;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     background-color: #fff;
+     box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+ }
+ 
+ .left {
+     background: url("https://raw.githubusercontent.com/Ruzder/grupal/main/bg-01.jpg") no-repeat center;
+     background-size: cover;
+     height: 100%;
+ }
+ 
+ .right {
+     padding: 25px 40px;
+ }
+ 
+ .field {
+     width: 100%;
+     border: 2px solid rgba(0, 0, 0, 0);
+     outline: none;
+     background-color: rgba(230, 230, 230, 0.6);
+     padding: 0.5rem 1rem;
+     font-size: 1.1rem;
+     margin-bottom: 22px;
+     transition: .3s;
+ }
+ 
+ .btn {
+     width: 50%;
+     padding: 0.5rem 1rem;
+     background-color: cornflowerblue;
+     color: #fff;
+     font-size: 1.1rem;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     transition: .3s;
+ }
+ 
+ .btn:hover {
+     background-color: #27ae60;
+ }
+ 
+ @media screen and (max-width: 880px) {
+     .contact-box {
+         grid-template-columns: 1fr;
+     }
+     .left {
+         height: 200px;
+     }
+ }
+ /* =========================
+ Pagina Crear Capacitacion
+============================*/
+ 
+ .left1 {
+     background: url("https://raw.githubusercontent.com/Ruzder/grupal/main/capacitacion1.jpg") no-repeat center;
+     background-size: cover;
+     height: 100%;
+ }
+ 
+ @media screen and (max-width: 880px) {
+     .left1 {
+         height: 200px;
+     }
+ }
+ /* =========================
+ Pagina listar usuarios
+============================*/
+ 
+ .table_a {
+     background-color: rgb(227, 224, 235);
+     color: rgb(73, 130, 139);
+     border: 1px solid rgb(27, 86, 100);
+     text-align: left;
+     font-size: xx-small;
+     border: none;
+     width: 100%;
+     border-collapse: collapse;
+ }
+ 
+ .td_a {
+     background-color: rgb(227, 224, 235);
+     color: rgb(73, 130, 139);
+     border: 1px solid rgb(27, 86, 100);
+     text-align: left;
+     padding: 5px 10px;
+ }
+ /*estilo {listado usuario, eliminar cliente,modificar cliente}*/
+ 
+ .botonlistado {
+     padding: 8px;
+     border-radius: 10px;
+     color: white;
+     background: deepskyblue;
+     margin: auto;
+ }
+ /* =========================
+       Pagina crear usuarios
+    ============================*/
+ 
+ .left2 {
+     background: url("https://raw.githubusercontent.com/Ruzder/grupal/main/banner2.jpg") no-repeat center;
+     background-size: cover;
+     height: 100%;
+ }
+ 
+ @media screen and (max-width: 880px) {
+     .left2 {
+         height: 200px;
+     }
+ }
+ /* =========================
+ Pagina Editar Cliente
+============================*/
+ 
+ .left3 {
+     background: url("https://raw.githubusercontent.com/CapTomax/Grupal2/main/linkedin-sales-solutions-YDVdprpgHv4-unsplash.jpg") no-repeat center;
+     background-size: cover;
+     height: 100%;
+ }
+ 
+ @media screen and (max-width: 880px) {
+     .left3 {
+         height: 200px;
+     }
+ }
+ /* =========================
+ Pagina Editar Administrativo
+============================*/
+ 
+ .left4 {
+     background: url("https://raw.githubusercontent.com/Ruzder/grupal/main/administrativo%20(1).jpg") no-repeat center;
+     background-size: cover;
+     height: 100%;
+ }
+ 
+ @media screen and (max-width: 880px) {
+     .left4 {
+         height: 200px;
+     }
+ }
+ /* =========================
+ Pagina Editar Profesional
+============================*/
+ 
+ .left5 {
+     background: url("https://raw.githubusercontent.com/Ruzder/respaldo/main/profesor.jpg") no-repeat center;
+     background-size: cover;
+     height: 100%;
+ }
+ 
+ @media screen and (max-width: 880px) {
+     .left5 {
+         height: 200px;
+     }
+ }
+ /* =========================
+ Pagina crear checklist
+============================*/
+ 
+ #paper {
+     width: 600px;
+     height: 700px;
+     margin: 20px auto;
+     background-color: white;
+     box-shadow: 0px 0px 5px 0px #888;
+ }
+ 
+ #paper::before {
+     content: '';
+     width: 2px;
+     height: 100%;
+     background-color: rgba(255, 0, 0, 0.6);
+ }
+ 
+ #paper {
+     position: relative;
+ }
+ 
+ #paper::before {
+     position: absolute;
+     top: 0;
+     left: 40px;
+ }
+ 
+ #paper {
+     padding-top: 40px;
+     padding-bottom: 40px;
+ }
+ 
+ #pattern {
+     height: 100%;
+     background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
+ }
+ 
+ #content {
+     padding-top: 6px;
+     padding-left: 56px;
+     padding-right: 16px;
+     line-height: 25px;
+     font-family: 'Dancing Script', cursive;
+     font-size: 19px;
+     letter-spacing: 1px;
+     word-spacing: 5px;
+     text-align: left;
+ }
+ 
+ .left6 {
+     text-align: left;
+     font-size: x-large;
+     padding: 10px;
+     margin: 10px;
+ }
+ 
+ #boton {
+     padding: 8px;
+     border-radius: 10px;
+     color: white;
+     background: deepskyblue;
+     margin: auto;
+ }
+ 
+ #boton:hover {
+     background-color: #27ae60;
+ }
+ /* ==============================================================================================
+ Pagina index
+=================================================================================================*/
+ 
+ .informacion-primera {
+     padding: 60px 0;
+     width: 60%;
+     max-width: 1000px;
+     margin: auto;
+     overflow: hidden;
+ }
+ 
+ .informacion-segundo {
+     padding: 60px 0;
+     width: 60%;
+     max-width: 1000px;
+     margin: auto;
+     overflow: hidden;
+ }
+ 
+ .contenedor-imagenes {
+     display: flex;
+     width: 80%;
+     margin: auto;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     border-radius: 3px;
+ }
+ 
+ .contenedor-imagenes .imagen {
+     width: 32%;
+     position: relative;
+     height: 32%;
+     margin-bottom: 5px;
+     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+ }
+ 
+ .imagen img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+ 
+ .overlay {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     background: hsla(229, 100%, 66%, 0.753);
+     width: 100%;
+     height: 0%;
+     overflow: hidden;
+     transition: .5s ease;
+ }
+ 
+ .overlay h2 {
+     color: rgb(0, 0, 0);
+     font-weight: 300;
+     font-size: 30px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     text-align: center;
+     transform: translate(-50%, -50%);
+ }
+ 
+ .imagen:hover .overlay {
+     height: 100%;
+     cursor: pointer;
+ }
+ /* ====================================================================*/
+ /*=====================================================================*/
+ 
+ .cliente-contenedor {
+     display: flex;
+     width: 80%;
+     margin: auto;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     border-radius: 3px;
+     height: 900px;
+ }
+ 
+ .titulo {
+     font-size: 45px;
+     align-items: center;
+ }
+ 
+ .cards {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+ }
+ 
+ .cards .card {
+     background: #99c79d;
+     display: flex;
+     width: 43%;
+     height: 350px;
+     align-items: center;
+     justify-content: space-between;
+     border-radius: 5px;
+     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+     text-align: center;
+ }
+ 
+ .cards .card img {
+     width: 100px;
+     height: 100px;
+     object-fit: cover;
+     border: 3px solid #fff;
+     border-radius: 50%;
+     display: block;
+ }
+ 
+ .cards .card>.contenido-textos-card {
+     width: 60%;
+     color: #fff;
+ }
+ 
+ .cards .card>.contenido-textos-card p {
+     font-weight: 300;
+     padding-top: 5px;
+     font-size: 60px;
+ }
+ 
+ @media screen and (max-width:1025px) {
+     .contenedor-imagenes {
+         width: 75%;
+     }
+     .contenedor-imagenes .imagen {
+         width: 60%;
+     }
+     .cards {
+         flex-direction: column;
+         justify-content: space-between;
+     }
+     .card {
+         width: 85%;
+         height: auto;
+     }
+     .contenido-texto-card h2 {
+         font-size: medium;
+     }
+     .contenido-texto-card p {
+         font-size: medium;
+         text-justify: auto;
+     }
+     .pie-pagina {
+         font-size: medium;
+         text-align: center;
+     }
+     .galeria h2 {
+         font-size: large;
+     }
+     .titulo {
+         padding-top: 40px;
+         font-size: 20px;
+         justify-content: center;
+     }
+     .footer p {
+         font-size: 12px;
+     }
+     .fondo h1 {
+         font-size: xx-large;
+         text-align: center;
+     }
+     .fondo h2 {
+         font-size: x-small;
+         text-align: left;
+     }
+     .fondo {
+         align-items: center;
+         text-align: center;
+         width: auto;
+         height: 600px;
+     }
+ }
+ 
+ @media screen and (max-width:700px) {
+     .contenedor-imagenes {
+         width: 90%;
+     }
+     .contenedor-imagenes .imagen {
+         width: 48%;
+     }
+     .cards .card {
+         width: 95%;
+     }
+ }
+ 
+ @media screen and (max-width:450px) {
+     h1 {
+         font-size: 22px;
+     }
+     .contenedor-imagenes {
+         width: 98%;
+     }
+     .contenedor-imagenes .imagen {
+         width: 80%;
+     }
+     .cards .card {
+         width: 95%;
+     }
+ }
+ /*========================================================================*/
+ 
+ .cuerpo-info {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: space-between;
+     text-align: justify;
+ }
+ 
+ .cuerpo-info .caja-imagen .imagen-segundo {
+     padding-top: 15px;
+     padding-right: 15px;
+     width: 65%;
+     align-items: center;
+     height: auto;
+     justify-content: space-between;
+     margin-left: 250px;
+ }
+ 
+ @media screen and (max-width:1450px) {
+     .cuerpo-info {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         text-align: center;
+         text-justify: auto;
+     }
+     .caja-imagen {
+         width: 50%;
+         margin-left: 350px;
+         height: auto;
+         justify-content: center;
+         align-items: center;
+         padding-left: 40px;
+     }
+     .fondo h1 {
+         font-size: xx-large;
+         text-align: center;
+     }
+     .fondo h2 {
+         font-size: large;
+         text-align: center;
+     }
+     .fondo {
+         align-items: center;
+         text-align: center;
+         width: auto;
+         height: 600px;
+     }
+ }
+ 
+ @media screen and (max-width:1026px) {
+     .cuerpo-info {
+         display: flex;
+     }
+     .imagen-segundo {
+         height: auto;
+         justify-content: flex-start;
+         align-items: center;
+     }
+     .caja-imagen {
+         width: 40%;
+         height: auto;
+         align-items: center;
+         padding-right: 20px;
+     }
+ }
+ 
+ @media screen and (max-width:700px) {
+     .caja-imagen {
+         width: 0%;
+         margin-left: 350px;
+         height: auto;
+         justify-content: center;
+         align-items: center;
+         padding-left: 40px;
+     }
+     .cuerpo-hijoo h2 {
+         font-size: xx-small;
+         text-align: justify;
+     }
+     .cuerpo-hijoo h5 {
+         font-size: xx-small;
+         text-align: justify;
+     }
+     .cuerpo-hijo p {
+         font-size: x-small;
+         text-align: justify;
+     }
+     .galeria h2 {
+         font-size: medium;
+         text-align: justify;
+         margin: 5px;
+         padding: 5px;
+     }
+     .cliente-contenedor {
+         font-size: small;
+     }
+     .fondo h1 {
+         font-size: xx-large;
+         text-align: center;
+     }
+     .fondo h2 {
+         font-size: large;
+         text-align: center;
+     }
+     .fondo {
+         width: auto;
+         height: auto;
+     }
+ }
+ /*=====================================================*/
+ 
+ .galeria {
+     font-family: 'Noto Sans JP';
+ }
+ 
+ .galeria h2 {
+     text-align: center;
+     margin: 20px 0 15px 0;
+ }
+ 
+ .linea {
+     border-top: 5px solid #0077c0;
+     margin-bottom: 60px;
+ }
+ /*=====================================================
+Pagina de crear pago 
+=======================================================*/
+ 
+ main {
+     max-width: 800px;
+     width: 90%;
+     height: 850px;
+     margin: auto;
+     padding: 50px;
+ }
+ 
+ .formulario {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 20px;
+ }
+ 
+ .formulario__label {
+     display: block;
+     font-weight: 700;
+     padding: 10px;
+     cursor: pointer;
+     text-align: left;
+ }
+ 
+ .formulario__grupo-input {
+     position: relative;
+ }
+ 
+ .formulario__input {
+     width: 330px;
+     background: #fff;
+     border: 3px solid transparent;
+     border-radius: 3px;
+     height: 45px;
+     line-height: 45px;
+     padding: 0 40px 0 10px;
+     transition: .3s ease all;
+     text-align: right;
+ }
+ 
+ .formulario__input:focus {
+     border: 3px solid #0075FF;
+     outline: none;
+     box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+ }
+ 
+ .formulario__input-error {
+     font-size: 12px;
+     margin-bottom: 0;
+     display: none;
+ }
+ 
+ .formulario__input-error-activo {
+     display: block;
+ }
+ 
+ .formulario__validacion-estado {
+     position: absolute;
+     right: 10px;
+     bottom: 15px;
+     z-index: 100;
+     font-size: 16px;
+     opacity: 0;
+ }
+ 
+ .formulario__checkbox {
+     margin-right: 10px;
+ }
+ 
+ .formulario__grupo-terminos,
+ .formulario__mensaje,
+ .formulario__grupo-btn-enviar {
+     grid-column: span 2;
+ }
+ 
+ .formulario__mensaje {
+     height: 45px;
+     line-height: 45px;
+     background: #F66060;
+     padding: 0 15px;
+     border-radius: 3px;
+     display: none;
+ }
+ 
+ .formulario__mensaje-activo {
+     display: block;
+ }
+ 
+ .formulario__mensaje p {
+     margin: 0;
+ }
+ 
+ .formulario__grupo-btn-enviar {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ 
+ .formulario__btn {
+     margin: 60px;
+     height: 45px;
+     line-height: 45px;
+     width: 30%;
+     background: #000;
+     color: #fff;
+     font-weight: bold;
+     border: none;
+     border-radius: 3px;
+     cursor: pointer;
+     align-items: baseline;
+     transition: .1s ease all;
+ }
+ 
+ .formulario__btn:hover {
+     box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+ }
+ 
+ .formulario__mensaje-exito {
+     font-size: 14px;
+     color: #119200;
+     display: none;
+ }
+ 
+ .formulario__mensaje-exito-activo {
+     display: block;
+ }
+ /* ----- -----  Estilos para Validacion ----- ----- */
+ 
+ .formulario__grupo-correcto .formulario__validacion-estado {
+     color: #1ed12d;
+     opacity: 1;
+ }
+ 
+ .formulario__grupo-incorrecto .formulario__label {
+     color: #bb2929;
+ }
+ 
+ .formulario__grupo-incorrecto .formulario__validacion-estado {
+     color: #bb2929;
+     opacity: 1;
+ }
+ 
+ .formulario__grupo-incorrecto .formulario__input {
+     border: 3px solid #bb2929;
+ }
+ /* ----- -----  Mediaqueries ----- ----- */
+ 
+ @media screen and (max-width: 800px) {
+     .formulario {
+         grid-template-columns: 1fr;
+     }
+     .formulario__grupo-terminos,
+     .formulario__mensaje,
+     .formulario__grupo-btn-enviar {
+         grid-column: 1;
+     }
+     .formulario__btn {
+         width: 100%;
+     }
+ }
+ /* ========================================================    
+Formulario de Editar Cliente 
+===========================================================*/
+ 
+ .text-span {
+     font-size: 12px;
+     text-align: right;
+     align-items: flex-end;
+ }
+ 
+ .form-label {
+     text-align: left;
+ }
+ 
+ #formulario {
+     text-align: left;
+ }
+ 
+ #formulario h6 {
+     text-align: justify;
+ }
+ /*==============================================================    
+css pagina listado accidente
+===============================================================*/
+ 
+ .container-Acc {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     align-items: center;
+     background: rebeccapurple;
+ }
+ 
+ .contact-box-Acc {
+     max-width: 100%;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     background-color: #fff;
+     box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+ }
+ 
+ .left-Acc {
+     background: url("https://raw.githubusercontent.com/Ruzder/grupal/main/bg-01.jpg") no-repeat center;
+     background-size: cover;
+     height: 100%;
+ }
+ 
+ .right-Acc {
+     padding: 25px 40px;
+     width: 800px;
+ }
+ 
+ .field-Acc {
+     width: 100%;
+     border: 2px solid rgba(0, 0, 0, 0);
+     outline: none;
+     background-color: rgba(230, 230, 230, 0.6);
+     padding: 0.5rem 1rem;
+     font-size: 1.1rem;
+     margin-bottom: 22px;
+     transition: .3s;
+ }
+ 
+ main-Acc {
+     max-width: 800px;
+     width: 90%;
+     height: 850px;
+     margin: auto;
+     padding: 50px;
+ }
+ 
+ .formulario-Acc {
+     gap: 20px;
+     align-items: flex-end;
+ }
+ 
+ .formulario__label-Acc {
+     font-weight: 100;
+     padding: 10px;
+     cursor: pointer;
+     text-align: left;
+ }
+ 
+ .formulario__grupo-correcto .formulario__validacion-estado {
+     color: #1ed12d;
+     opacity: 1;
+ }
+ 
+ .formulario__grupo-incorrecto .formulario__label-Acc {
+     color: #bb2929;
+ }
+ 
+ .formulario__grupo-incorrecto .formulario__validacion-estado {
+     color: #bb2929;
+     opacity: 1;
+ }
+ 
+ .formulario__grupo-incorrecto .formulario__input {
+     border: 3px solid #bb2929;
+ }
+ /* ----- -----  Mediaqueries ----- ----- */
+ 
+ @media screen and (max-width: 1024px) {
+     .container-Acc {
+         position: relative;
+         width: 100%;
+         height: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         background: rebeccapurple;
+     }
+     .contact-box-Acc {
+         max-width: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         background-color: #fff;
+         box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+     }
+     .left-Acc {
+         background: url("https://raw.githubusercontent.com/Ruzder/grupal/main/bg-01.jpg") no-repeat center;
+         height: 200px;
+     }
+     .right-Acc {
+         padding: 25px 40px;
+         width: 1024px;
+         align-items: center;
+     }
+     .formulario-Acc {
+         gap: 20px;
+     }
+     .formulario__label-Acc {
+         display: block;
+         font-weight: 700;
+         padding: 10px;
+         cursor: pointer;
+         text-align: center;
+     }
+ }
+ 
+ @media screen and (max-width: 1024px) {
+     .fondo {
+         background: url(https://raw.githubusercontent.com/Ruzder/grupal/main/banner1.jpg);
+         width: auto;
+         height: 300px;
+         text-align: center;
+     }
+     .fondo h1 {
+         font-size: large;
+         padding-top: 40px;
+         color: #fff;
+     }
+     .fondo h2 {
+         font-size: medium;
+         padding: 40px;
+         margin: auto;
+         color: #fff;
+     }
+     .container-Acc {
+         position: relative;
+         width: 100%;
+         height: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         background: rebeccapurple;
+     }
+     .left-Acc {
+         background: url("https://raw.githubusercontent.com/Ruzder/grupal/main/bg-01.jpg") no-repeat center;
+         height: 200px;
+     }
+     .right-Acc {
+         padding: 25px 40px;
+         width: 1024px;
+         align-items: center;
+     }
+     .formulario-Acc {
+         gap: 20px;
+     }
+     .formulario__label-Acc {
+         display: block;
+         font-weight: 700;
+         padding: 10px;
+         cursor: pointer;
+         text-align: center;
+     }
+ }

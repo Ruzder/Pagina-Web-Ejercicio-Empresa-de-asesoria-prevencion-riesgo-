@@ -1,0 +1,144 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="ISO-8859-1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/8d20d6c8c4.js" crossorigin="anonymous"></script>
+        <!-- <link rel="stylesheet" href="css/estilos.css"> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/jquery-ui.css"></link>
+        <title>Crear usuario</title>
+    </head>
+
+    <body>
+
+        <%@ include file="menu.jsp"%>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-6">
+                            <h3>Crear usuario</h3>
+                            <form action="" method="post" id="FUsuario">
+
+                                <div class="mb-3">
+                                    <label for="nombres" class="form-label">Nombres</label> <input class="form-control" id="nombres" name="nombres" type="text" placeholder="Ej: Brian Felipe">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="apellidos" class="form-label">Apellidos</label> <input class="form-control" id="apellidos" name="apellidos" type="text" placeholder="Ej: Guzmán Kessi">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="fecha_n" class="form-label">Fecha nacimiento</label>
+                                    <input class="form-control" id="fecha" name="fecha_n" type="text">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="run" class="form-label">Run</label> <input class="form-control" id="run" name="run" type="text" placeholder="Ej: 111111111-1">
+                                </div>
+
+                                <div class="mb-3">
+                                    <select class="form-select" aria-label="Default select example" id="tipo_u" name="tipo_u" onchange="tipoUsuario()">
+								<option value=0 selected>Seleccione tipo de usuario</option>
+								<option value=1>Cliente</option>
+								<option value=2>Profesional</option>
+								<option value=3>Administrador</option>
+							        </select>
+                                </div>
+                                <!-- campos para usuario tipo Cliente -->
+                                <div id="tipo_c">
+                                    <h5>Campos perfil Cliente</h5>
+                                    <div class="mb-3">
+                                        <label for="rut" class="form-label">Rut Cliente</label> <input class="form-control" id="rut" name="rut" type="text" placeholder="Ej: 11111111-1" minlength="9" maxlength="10">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="direccion" class="form-label">Dirección</label> <input class="form-control" id="direccion" name="direccion" type="text" placeholder="Ej: Av. Siempre viva" minlength="4">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="comuna" class="form-label">Comuna</label> <input class="form-control" id="comuna" name="comuna" type="text" placeholder="Ej: Santiago" minlength="4">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="cant_e" class="form-label">Cantidad de
+									empleados</label> <input class="form-control" id="cant_e" name="cant_e" type="number" min="1">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="tel_c" class="form-label">Teléfono</label> <input class="form-control" id="tel_c" name="tel_c" type="text" minlength="9" placeholder="Ej: 9 87654321">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="razon" class="form-label">Razón social</label> <input class="form-control" id="razon" name="razon" type="text" minlength="4">
+                                    </div>
+                                </div>
+                                <!-- campos para usuario tipo profesional -->
+                                <div id="tipo_p">
+                                    <h5>Campos perfil Profesional</h5>
+                                    <div class="mb-3">
+                                        <label for="anios_exp" class="form-label">Años de
+									experiencia</label> <input class="form-control" id="anios_exp" name="anios_exp" type="number">
+                                    </div>
+
+
+                                    <div class="mb-3">
+                                        <label for="departamento" class="form-label">Departamento</label>
+                                        <input class="form-control" id="departamento" name="departamento" type="text">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="titulo" class="form-label">Titulo</label> <input class="form-control" id="titulo" name="titulo" type="text">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="fecha" class="form-label">Fecha de ingreso</label> <input class="form-control" id="fecha2" name="fecha_in" type="text">
+                                    </div>
+                                </div>
+                                <!-- campos para usuario tipo Administrativo -->
+                                <div id="tipo_a">
+                                    <h5>Campos perfil Administrador</h5>
+                                    <div class="mb-3">
+                                        <label for="nombre_sup" class="form-label">Nombre
+									superior</label> <input class="form-control" id="nombre_sup" name="nombre_sup" type="text" placeholder="Ej: Brian Guzmán">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="area" class="form-label">Area</label> <input class="form-control" id="area" name="area" type="text" placeholder="Ej: Desarrollo">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="exp_prev" class="form-label">Experiencia
+									previa</label> <input class="form-control" id="exp_prev" name="exp_prev" type="text" placeholder="Ej: Sin experiencia">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="funcion" class="form-label">Función</label> <input class="form-control" id="funcion" name="funcion" type="text" placeholder="Ej: Desarrollador">
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-success">Crear</button>
+                            </form>
+                        </div>
+                        <div class="contenedor-img col-sm-12 col-lg-6">
+                            <img src="https://www.ipnie.com/wp-content/uploads/2021/02/profile.jpeg" alt="" srcset="">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                Mr. Segurito &copy; Les Cuates -
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+            </footer>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script type="text/javascript" src="./js/jquery-ui.js"></script>
+            <script type="text/javascript" src="./js/calendario.js"></script>
+            <script type="text/javascript" src="./js/usuario.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+
+    </html>
